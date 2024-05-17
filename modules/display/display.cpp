@@ -111,6 +111,9 @@ static void displayCodeWrite( bool type, uint8_t dataBus );
 
 void displayInit( displayConnection_t connection )
 {
+    // En este ejemplo se implementa el display con comunicacion I2C 
+    // No se encuentran funciones de Lock/Unlock
+
     display.connection = connection;
     
     if( display.connection == DISPLAY_CONNECTION_I2C_PCF8574_IO_EXPANDER) {
